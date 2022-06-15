@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+
+<script src="mode/javascript/javascript.js"></script>
+<script src="mode/css/css.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<main>
+	<section>
+		<div class="container-c">
+			<form>
+				<h1>Simulador de ahorro</h1>
+				<p id="bienvenido"></p>
+				<p>Seleccione la cantidad de ahorro que quiere obtener al final del año.</p>
+				<label class="capital">Ingrese monto
+				<input type="text"  id="monto">
+				</label>
+				<div class="boton"onclick="pesos()">CALCULAR EN PESOS</button></div>
+				<div class="boton" onclick="dolar()">CALCULAR EN DOLARES</button></div>
+			</form>
+		  </div>
+	</section>
+	<div class="container mt-4 shadow-lg p3 mb-5 bg-body rounded">
+		<p>Si el dolar tiene otro cambio por favor comunicarse por mail con el siguiente usuario:</p>
+		<table class="table table-boardered table-striped">
+			<thead>
+				<th>ID</th>
+				<th>Nombre</th>
+				<th>Email</th>
+			</thead>
+
+			<tbody id="data">
+
+			</tbody>
+		</table>
+	</div>
+        
+	</main>		
+<script src="app.js"> </script>
+</body>
+</html>
